@@ -8,9 +8,11 @@
     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <script src="./DotToDot.min.js"></script>
     <script>
-        function startGame() {
-            new GameConfigurator(document.getElementById("imageContainer"), 'canvas').startGame();
-        }
+        document.addEventListener(
+            'DOMContentLoaded',
+            event => {
+                new GameConfigurator(document.getElementById("imageContainer"), 'canvas').startGame();
+            });
     </script>
     <style>
         .canvas {
@@ -20,7 +22,7 @@
     </style>
 </head>
 
-<body onload="startGame()">
+<body>
     <div id="imageContainer">
     </div>
     <p>
