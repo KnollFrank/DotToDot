@@ -5,31 +5,36 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dot to Dot</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <script src="./DotToDot.min.js"></script>
     <script>
         document.addEventListener(
             'DOMContentLoaded',
-            event => {
-                new GameConfigurator(document.getElementById("imageContainer"), 'canvas').startGame();
-            });
+            event =>
+                GameStarter.startGame(
+                    "ancient_egypt_cleopatra.xml",
+                    1,
+                    document.getElementById("dotToDtoImageCanvas"),
+                    {
+                        zoomInElement: document.getElementById("zoomIn"),
+                        zoomOutElement: document.getElementById("zoomOut")
+                    }));
     </script>
-    <style>
-        .canvas {
-            touch-action: none;
-            border: 1px solid #d3d3d3;
-            background-color: #f1f1f1;
-        }
-    </style>
 </head>
 
 <body>
-    <div id="imageContainer">
+    <div id="container">
+        <canvas id="dotToDtoImageCanvas" class="canvas"></canvas>
+        <div id="zoomControls">
+            <button type="button" id="zoomIn">+</button>
+            <button type="button" id="zoomOut">-</button>
+        </div>
     </div>
     <p>
         <a
-            href='https://play.google.com/store/apps/details?id=org.walkfromdottodot&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
-                alt='Get it on Google Play'
+            href='https://play.google.com/store/apps/details?id=org.walkfromdottodot&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+            <img alt='Get it on Google Play'
                 src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
     </p>
 </body>
