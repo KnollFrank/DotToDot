@@ -16,6 +16,7 @@
                     "ancient_egypt_cleopatra.xml",
                     1,
                     document.getElementById("dotToDtoImageCanvas"),
+                    document.getElementById("progress"),
                     document.getElementById("centerPlayer"),
                     {
                         zoomInElement: document.getElementById("zoomIn"),
@@ -26,8 +27,9 @@
 
 <body>
     <div id="container">
+        <div id="progress"></div>
         <canvas id="dotToDtoImageCanvas" class="canvas"></canvas>
-        <div id="zoomControls">
+        <div id="controls">
             <button type="button" id="centerPlayer">
                 <img src="img/gps-svgrepo-com.svg" />
             </button>
