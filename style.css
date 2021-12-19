@@ -29,6 +29,9 @@
 #controls button {
     margin: 5px;
     padding: 5px;
+    width: 21px;
+    height: 21px;
+    box-sizing: content-box;
 }
 
 a img {
