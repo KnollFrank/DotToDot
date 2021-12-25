@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+  <path
+      android:pathData="M304.373,91.708l-101.159,303.55l294.479,0z"
+      android:fillColor="#DDCBC0" />
+  <path
+      android:pathData="M251.653,249.904l52.72,-158.196l-209.669,303.55l264.051,0z"
+      android:fillColor="#C4A89B" />
+  <path
+      android:pathData="M173.209,196.38l-107.277,198.878l253.818,0z"
+      android:fillColor="#DDCBC0" />
+  <path
+      android:pathData="M173.209,196.38l-157.009,198.878l49.732,0z"
+      android:fillColor="#C4A89B" />
+  <path
+      android:pathData="M127.894,356.9l-14.043,-7.021l7.06,-14.12l14.043,7.021L127.894,356.9zM141.976,328.735l-14.043,-7.021l17.32,-34.64l14.043,7.021L141.976,328.735z"
+      android:fillColor="#FFFFFF" />
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M0,403.108h335.286L173.423,183.437L0,403.108zM123.473,272.048L61.247,387.407H32.399L123.473,272.048zM79.086,387.407l95.15,-176.397l29.712,40.323h-28.647v15.701h40.216l11.569,15.701h-27.71v15.701h39.279l11.569,15.701h-26.774v15.701h38.343l11.569,15.701h-26.884v15.701h38.453l19.282,26.168H79.086z" />
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M351.152,387.407l0,15.701l160.848,0l-207.376,-325.622l-86.595,125.961l12.938,8.895l48.614,-70.714l-33.76,101.995l14.906,4.934l45.905,-138.689l36.097,56.681l-21.932,0l0,15.7l31.931,0l17.333,27.215l-22.049,0l0,15.701l32.048,0l16.665,26.168l-22.545,0l0,15.701l32.545,0l16.666,26.168l-21.996,0l0,15.701l31.994,0l23.332,36.635l-21.831,0l0,15.701l31.831,0l16.665,26.168z" />
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M79.007,418.813h15.701v15.701h-15.701z" />
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M16.2,418.813h15.701v15.701h-15.701z" />
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M47.605,418.813h15.701v15.701h-15.701z" />
+</vector>

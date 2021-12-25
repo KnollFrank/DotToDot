@@ -1,0 +1,39 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+    <path
+        android:pathData="M0,114.087h512v33.391h-512z"
+        android:fillColor="#FF4F2A" />
+    <path
+        android:pathData="M0,47.304h512v33.391h-512z"
+        android:fillColor="#FF832F" />
+    <path
+        android:pathData="M345.043,230.957c-73.766,0 -133.565,59.799 -133.565,133.565l133.565,33.391l133.565,-33.391C478.609,290.756 418.809,230.957 345.043,230.957z"
+        android:fillColor="#FF832F" />
+    <path
+        android:pathData="M361.739,231.994c-5.469,-0.682 -11.041,-1.037 -16.696,-1.037c-5.654,0 -11.226,0.355 -16.696,1.037v60.18h33.391V231.994z"
+        android:fillColor="#FF4F2A" />
+    <path
+        android:pathData="M450.552,282.623c-6.855,-8.819 -14.791,-16.756 -23.611,-23.611l-42.546,42.546l23.611,23.611L450.552,282.623z"
+        android:fillColor="#FF4F2A" />
+    <path
+        android:pathData="M166.957,230.957c-73.766,0 -133.565,59.799 -133.565,133.565l133.565,33.391l133.565,-33.391C300.522,290.756 240.722,230.957 166.957,230.957z"
+        android:fillColor="#FFD485" />
+    <path
+        android:pathData="M183.652,231.994c-5.469,-0.682 -11.041,-1.037 -16.696,-1.037s-11.226,0.355 -16.696,1.037v60.18h33.391V231.994z"
+        android:fillColor="#FFB833" />
+    <path
+        android:pathData="M61.448,282.623l42.546,42.546l23.611,-23.611l-42.546,-42.546C76.239,265.868 68.303,273.804 61.448,282.623z"
+        android:fillColor="#FFB833" />
+    <path
+        android:pathData="M272.465,282.623c-6.855,-8.819 -14.791,-16.756 -23.611,-23.611l-42.546,42.546l23.611,23.611L272.465,282.623z"
+        android:fillColor="#FFB833" />
+    <path
+        android:pathData="M0,364.522l0,100.174l256,0l22.261,-50.087l-22.261,-50.087z"
+        android:fillColor="#FF832F" />
+    <path
+        android:pathData="M256,364.522h256v100.174h-256z"
+        android:fillColor="#FF4F2A" />
+</vector>

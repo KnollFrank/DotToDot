@@ -1,0 +1,39 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+    <path
+        android:pathData="M301.011,323.517l0,146.285l-22.506,0l-45.01,0l-22.506,0l0,-146.285l22.506,0l45.01,0z"
+        android:fillColor="#546A79" />
+    <path
+        android:pathData="M233.495,469.802h45.011v33.758h-45.011z"
+        android:fillColor="#E7ECED" />
+    <path
+        android:pathData="M233.495,261.626h45.011v61.89h-45.011z"
+        android:fillColor="#E7ECED" />
+    <path
+        android:pathData="M278.505,194.11l45.012,0l0,-185.67l45.01,0l0,185.67l0,67.516l-90.022,0l-45.01,0l-90.022,0l0,-67.516l0,-185.67l45.011,0l0,185.67l45.011,0l0,-185.67l45.01,0z"
+        android:fillColor="#AFB6BB" />
+    <path
+        android:pathData="M143.473,194.11h225.055v67.516h-225.055z"
+        android:fillColor="#8F969A" />
+    <path
+        android:pathData="M232.932,348.273h45.011v16.879h-45.011z"
+        android:fillColor="#FFFFFF" />
+    <path
+        android:pathData="M232.932,387.657h45.011v16.879h-45.011z"
+        android:fillColor="#FFFFFF" />
+    <path
+        android:pathData="M232.932,427.042h45.011v16.879h-45.011z"
+        android:fillColor="#FFFFFF" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M376.967,270.066V0h-61.89v185.67h-28.132V0h-61.89v185.67h-28.132V0h-61.89v104.088h16.879V16.879h28.132v185.67h61.89V16.879h28.132v185.67h61.89V16.879h28.132v236.308H151.912V126.593h-16.879v143.473h90.022v45.011h-22.506v42.196h16.879v-25.316h73.143v129.407h-73.143v-81.58h-16.879v98.459h22.506V512h61.89v-33.758h22.505V315.077h-22.505v-45.011H376.967zM270.066,495.121h-28.132v-16.879h28.132V495.121zM270.066,315.077h-28.132v-45.011h28.132V315.077z" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M182.857,219.429h101.275v16.879h-101.275z" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M301.011,219.429h28.132v16.879h-28.132z" />
+</vector>

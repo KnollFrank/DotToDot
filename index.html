@@ -11,46 +11,76 @@
     <script>
         document.addEventListener(
             'DOMContentLoaded',
-            event =>
-                GameStarter.startGame(
-                    "ancient_egypt_cleopatra.xml",
-                    1,
-                    document.getElementById("dotToDtoImageCanvas"),
-                    document.getElementById("progress"),
-                    document.getElementById("playAgain"),
-                    document.getElementById("centerPlayer"),
-                    {
-                        zoomInElement: document.getElementById("zoomIn"),
-                        zoomOutElement: document.getElementById("zoomOut")
-                    }));
+            event => {
+                const gameStarter =
+                    new GameStarter(
+                        {
+                            canvas: document.getElementById("dotToDtoImageCanvas"),
+                            progressElement: document.getElementById("progress"),
+                            playAgainElement: document.getElementById("playAgain"),
+                            centerPlayerElement: document.getElementById("centerPlayer"),
+                            zoomElements: {
+                                zoomInElement: document.getElementById("zoomIn"),
+                                zoomOutElement: document.getElementById("zoomOut")
+                            }
+                        },
+                        document.getElementById("dotToDotImageCollectionSelector"),
+                        document.getElementById("dotToDotImageSelector"));
+                gameStarter.startGame();
+            });
     </script>
 </head>
 
 <body>
-    <div id="container">
-        <div id="progress"></div>
-        <canvas id="dotToDtoImageCanvas" class="canvas"></canvas>
-        <div id="controls">
-            <button type="button" id="playAgain">
-                <img src="img/replay-svgrepo-com.svg" />
-            </button>
-            <button type="button" id="centerPlayer">
-                <img src="img/gps-svgrepo-com.svg" />
-            </button>
-            <button type="button" id="zoomIn">
-                <img src="img/zoom-in-svgrepo-com.svg" />
-            </button>
-            <button type="button" id="zoomOut">
-                <img src="img/zoom-out-svgrepo-com.svg" />
-            </button>
+    <div class="navbar">
+        <button id="freeButton" class="tablink" onclick="Navigation.openFreePage()">Free</button>
+        <button id="premiumButton" class="tablink" onclick="Navigation.openPremiumPage()">Premium</button>
+        <button id="myWorkButton" class="tablink" onclick="Navigation.openMyWorkPage()">My Work</button>
+    </div>
+
+    <div id="free" class="tabcontent">
+        <h1>Collections</h1>
+        <div id="dotToDotImageCollectionSelector">
         </div>
     </div>
-    <p>
-        <a
-            href='https://play.google.com/store/apps/details?id=org.walkfromdottodot&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-            <img alt='Get it on Google Play'
-                src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
-    </p>
+
+    <div id="premium" class="tabcontent">
+        <h1>DotToDotImages</h1>
+        <div id="dotToDotImageSelector">
+        </div>
+    </div>
+
+    <div id="myWork" class="tabcontent">
+        <h1>DotToDotImage</h1>
+        <div id="container">
+            <div id="progress"></div>
+            <canvas id="dotToDtoImageCanvas" class="canvas"></canvas>
+            <div id="controls">
+                <button type="button" id="playAgain">
+                    <img src="img/replay-svgrepo-com.svg" />
+                </button>
+                <button type="button" id="centerPlayer">
+                    <img src="img/gps-svgrepo-com.svg" />
+                </button>
+                <button type="button" id="zoomIn">
+                    <img src="img/zoom-in-svgrepo-com.svg" />
+                </button>
+                <button type="button" id="zoomOut">
+                    <img src="img/zoom-out-svgrepo-com.svg" />
+                </button>
+            </div>
+        </div>
+        <p>
+            <a
+                href='https://play.google.com/store/apps/details?id=org.walkfromdottodot&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                <img alt='Get it on Google Play'
+                    src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
+        </p>
+    </div>
+
+    <script>
+        document.getElementById("freeButton").click();
+    </script>
 </body>
 
 </html>

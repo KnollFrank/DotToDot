@@ -1,0 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="800dp"
+    android:height="800dp"
+    android:viewportWidth="800"
+    android:viewportHeight="800">
+    <path
+        android:pathData="M24.807,153.839h750.387v62.215h-750.387z"
+        android:fillColor="#ED1F34" />
+    <path
+        android:pathData="M25.807,154.839h748.387v60.215h-748.387z"
+        android:fillColor="#ED1F34" />
+    <path
+        android:pathData="M24.807,583.946h750.387v62.215h-750.387z"
+        android:fillColor="#ED1F34" />
+    <path
+        android:pathData="M25.807,584.946h748.387v60.215h-748.387z"
+        android:fillColor="#ED1F34" />
+    <path
+        android:pathData="M25.807,498.925h748.387v60.215h-748.387z"
+        android:fillColor="#FFFFFF" />
+    <path
+        android:pathData="M24.807,474.118V325.882h39.709c6.563,0 11.903,-5.34 11.903,-11.903v-1h27.806v1c0,6.563 5.34,11.903 11.903,11.903h659.064v148.236H24.807z"
+        android:fillColor="#103B9B" />
+    <path
+        android:pathData="M64.516,326.882H25.807v146.236h748.387V326.882H116.129c-7.126,0 -12.903,-5.775 -12.903,-12.903H77.419C77.419,321.106 71.642,326.882 64.516,326.882z"
+        android:fillColor="#103B9B" />
+    <path
+        android:pathData="M25.807,301.075h38.709c7.126,0 12.903,5.775 12.903,12.903h25.806c0,-7.128 5.777,-12.903 12.903,-12.903h658.064V240.86H25.807V301.075z"
+        android:fillColor="#FFFFFF" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M787.097,129.032H12.903C5.777,129.032 0,134.808 0,141.936v516.129c0,7.128 5.777,12.903 12.903,12.903h774.193c7.128,0 12.903,-5.775 12.903,-12.903V141.936C800,134.808 794.225,129.032 787.097,129.032zM774.193,645.161H25.807v-60.215h748.387V645.161zM774.193,559.14H25.807v-60.215h748.387V559.14zM774.193,301.075H116.129c-7.126,0 -12.903,5.775 -12.903,12.903s5.777,12.903 12.903,12.903h658.064v146.236H25.807V326.882h38.709c7.126,0 12.903,-5.775 12.903,-12.903s-5.777,-12.903 -12.903,-12.903H25.807V240.86h748.387V301.075zM774.193,215.054H25.807v-60.215h748.387V215.054z" />
+</vector>

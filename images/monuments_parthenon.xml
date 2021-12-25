@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="511.999dp"
+    android:height="511.999dp"
+    android:viewportWidth="511.999"
+    android:viewportHeight="511.999">
+    <path
+        android:pathData="M17.067,465.066l477.866,0l0,-34.134l-477.866,0z"
+        android:fillColor="#CAD4DB" />
+    <path
+        android:pathData="M42.667,430.932l426.666,0l0,-34.133l-426.666,0z"
+        android:fillColor="#E6EEF4" />
+    <path
+        android:pathData="M238.933,396.799l34.134,0l0,-204.8l-34.134,0z"
+        android:fillColor="#CAD4DB" />
+    <path
+        android:pathData="M324.267,396.799l34.133,0l0,-204.8l-34.133,0z"
+        android:fillColor="#CAD4DB" />
+    <path
+        android:pathData="M409.6,396.799l34.133,0l0,-204.8l-34.133,0z"
+        android:fillColor="#CAD4DB" />
+    <path
+        android:pathData="M153.6,396.799l34.133,0l0,-204.8l-34.133,0z"
+        android:fillColor="#CAD4DB" />
+    <path
+        android:pathData="M68.267,396.799l34.133,0l0,-204.8l-34.133,0z"
+        android:fillColor="#CAD4DB" />
+    <path
+        android:pathData="M42.667,191.999l426.666,0l0,-34.132l-426.666,0z"
+        android:fillColor="#E6EEF4" />
+    <path
+        android:pathData="M256,38.399l-247.467,119.468l486.4,0z"
+        android:fillColor="#CAD4DB" />
+    <path
+        android:pathData="M503.467,473.599H8.533c-5.12,0 -8.533,-3.413 -8.533,-8.533s3.413,-8.533 8.533,-8.533h494.933c5.12,0 8.533,3.413 8.533,8.533C512,470.186 508.587,473.599 503.467,473.599"
+        android:fillColor="#E6EEF4" />
+</vector>
