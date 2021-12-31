@@ -33,7 +33,7 @@
 
 <body>
     <div class="topnav">
-        <button id="prevBtn" class="tablink" onclick="TabNavigation.showPrevTab()">
+        <button id="prevBtn" class="tablink" onclick="StepNavigation.showPreviousStep()">
             <img src="img/back-svgrepo-com.svg" />
         </button>
         <div id="infotext" class="tablink"></div>
@@ -47,8 +47,8 @@
 
     <div class="main">
         <div id="free" class="tabcontent">
-            <div id="tabs">
-                <div class="tab">
+            <div id="steps">
+                <div id="dotToDotImageCollectionSelectorStep" class="step">
                     <p>
                         <a
                             href='https://play.google.com/store/apps/details?id=org.walkfromdottodot&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
@@ -58,11 +58,11 @@
                     <div id="dotToDotImageCollectionSelector">
                     </div>
                 </div>
-                <div class="tab">
+                <div id="dotToDotImageSelectorStep" class="step">
                     <div id="dotToDotImageSelector">
                     </div>
                 </div>
-                <div class="tab">
+                <div id="playDotToDotImageStep" class="step">
                     <div id="container">
                         <div id="progress"></div>
                         <canvas id="dotToDtoImageCanvas" class="canvas"></canvas>
