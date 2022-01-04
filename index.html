@@ -15,17 +15,38 @@
                 const gameStarter =
                     new GameStarter(
                         {
-                            canvas: document.getElementById("dotToDtoImageCanvas"),
-                            progressElement: document.getElementById("progress"),
-                            playAgainElement: document.getElementById("playAgain"),
-                            centerPlayerElement: document.getElementById("centerPlayer"),
-                            zoomElements: {
-                                zoomInElement: document.getElementById("zoomIn"),
-                                zoomOutElement: document.getElementById("zoomOut")
+                            game: {
+                                canvas: document.getElementById("dotToDtoImageCanvas"),
+                                progressElement: document.getElementById("progress"),
+                                playAgainElement: document.getElementById("playAgain"),
+                                centerPlayerElement: document.getElementById("centerPlayer"),
+                                zoomElements: {
+                                    zoomInElement: document.getElementById("zoomIn"),
+                                    zoomOutElement: document.getElementById("zoomOut")
+                                }
+                            },
+                            free: {
+                                dotToDotImageCollectionSelector: document.getElementById("dotToDotImageCollectionSelector"),
+                                dotToDotImageSelector: document.getElementById("dotToDotImageSelector")
+                            },
+                            myWork: {
+                                dotToDotImageSelector: document.getElementById("myWorkDotToDotImageSelector")
+                            },
+                            bottomnav: {
+                                free: {
+                                    button: document.getElementById("freeButton"),
+                                    page: document.getElementById("free")
+                                },
+                                premium: {
+                                    button: document.getElementById("premiumButton"),
+                                    page: document.getElementById("premium")
+                                },
+                                myWork: {
+                                    button: document.getElementById("myWorkButton"),
+                                    page: document.getElementById("myWork")
+                                }
                             }
-                        },
-                        document.getElementById("dotToDotImageCollectionSelector"),
-                        document.getElementById("dotToDotImageSelector"));
+                        });
                 gameStarter.startGame();
             });
     </script>
@@ -40,9 +61,9 @@
     </div>
 
     <div class="bottomnav">
-        <button id="freeButton" class="tablink" onclick="BottomNavigation.openFreePage()">Free</button>
-        <button id="premiumButton" class="tablink" onclick="BottomNavigation.openPremiumPage()">Premium</button>
-        <button id="myWorkButton" class="tablink" onclick="BottomNavigation.openMyWorkPage()">My Work</button>
+        <button id="freeButton" class="tablink">Free</button>
+        <button id="premiumButton" class="tablink">Premium</button>
+        <button id="myWorkButton" class="tablink">My Work</button>
     </div>
 
     <div class="main">
@@ -89,6 +110,8 @@
         </div>
 
         <div id="myWork" class="tabcontent">
+            <div id="myWorkDotToDotImageSelector">
+            </div>
         </div>
     </div>
 </body>
