@@ -113,7 +113,8 @@ a img {
 }
 
 #dotToDotImageCollectionSelector,
-#dotToDotImageSelector {
+#dotToDotImageSelector,
+#myWorkDotToDotImageSelector {
     overflow: scroll;
 }
 
