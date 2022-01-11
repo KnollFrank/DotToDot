@@ -25,25 +25,47 @@
                                     zoomOutElement: document.getElementById("zoomOut")
                                 }
                             },
-                            free: {
-                                dotToDotImageCollectionSelector: document.getElementById("dotToDotImageCollectionSelector"),
-                                dotToDotImageSelector: document.getElementById("dotToDotImageSelector")
-                            },
                             myWork: {
-                                dotToDotImageSelector: document.getElementById("myWorkDotToDotImageSelector")
+                                inProgress: {
+                                    button: document.getElementById("inProgressButton"),
+                                    page: document.getElementById("inProgressPage"),
+                                    dotToDotImageSelector: document.getElementById("myWorkInProgressDotToDotImageSelector"),
+                                },
+                                completed: {
+                                    button: document.getElementById("completedButton"),
+                                    page: document.getElementById("completedPage"),
+                                    dotToDotImageSelector: document.getElementById("myWorkCompletedDotToDotImageSelector"),
+                                }
                             },
-                            bottomnav: {
+                            freePremiumMyWorkPageNavigation: {
                                 free: {
                                     button: document.getElementById("freeButton"),
-                                    page: document.getElementById("free")
+                                    page: document.getElementById("freePage")
                                 },
                                 premium: {
                                     button: document.getElementById("premiumButton"),
-                                    page: document.getElementById("premium")
+                                    page: document.getElementById("premiumPage")
                                 },
                                 myWork: {
                                     button: document.getElementById("myWorkButton"),
-                                    page: document.getElementById("myWork")
+                                    page: document.getElementById("myWorkPage")
+                                }
+                            },
+                            stepNavigation: {
+                                infotext: document.getElementById("infotext"),
+                                prevBtn: document.getElementById("prevBtn"),
+                                steps: {
+                                    dotToDotImageCollectionSelectorStep: {
+                                        step: document.getElementById("dotToDotImageCollectionSelectorStep"),
+                                        dotToDotImageCollectionSelector: document.getElementById("dotToDotImageCollectionSelector"),
+                                    },
+                                    dotToDotImageSelectorStep: {
+                                        step: document.getElementById("dotToDotImageSelectorStep"),
+                                        dotToDotImageSelector: document.getElementById("dotToDotImageSelector")
+                                    },
+                                    playDotToDotImageStep: {
+                                        step: document.getElementById("playDotToDotImageStep")
+                                    }
                                 }
                             }
                         });
@@ -54,7 +76,7 @@
 
 <body>
     <div class="topnav">
-        <button id="prevBtn" class="tablink" onclick="StepNavigation.showPreviousStep()">
+        <button id="prevBtn" class="tablink">
             <img src="img/back-svgrepo-com.svg" />
         </button>
         <div id="infotext" class="tablink"></div>
@@ -67,7 +89,7 @@
     </div>
 
     <div class="main">
-        <div id="free" class="tabcontent">
+        <div id="freePage" class="pageContent">
             <div id="steps">
                 <div id="dotToDotImageCollectionSelectorStep" class="step">
                     <p>
@@ -106,14 +128,35 @@
             </div>
         </div>
 
-        <div id="premium" class="tabcontent">
+        <div id="premiumPage" class="pageContent">
         </div>
 
-        <div id="myWork" class="tabcontent">
-            <div id="myWorkDotToDotImageSelector">
+        <div id="myWorkPage" class="pageContent">
+            <div>
+                <button id="inProgressButton" class="tablink">In Progress</button>
+                <button id="completedButton" class="tablink">Completed</button>
+            </div>
+            <div id="inProgressPage" class="pageContent">
+                <div id="myWorkInProgressDotToDotImageSelector">
+                </div>
+            </div>
+            <div id="completedPage" class="pageContent">
+                <div id="myWorkCompletedDotToDotImageSelector">
+                </div>
             </div>
         </div>
     </div>
+
+    <template id="template-DotToDotImageCardView">
+        <div style="display: inline-block;">
+            <h4></h4>
+            <canvas class="canvas"></canvas>
+        </div>
+    </template>
+
+    <template id="template-canvas">
+        <canvas class="canvas"></canvas>
+    </template>
 </body>
 
 </html>

@@ -50,7 +50,7 @@ html {
     background-color: #ccc;
 }
 
-.tabcontent {
+.pageContent {
     display: none;
     height: 100%;
     animation: fadeEffect 0.3s;
@@ -114,7 +114,8 @@ a img {
 
 #dotToDotImageCollectionSelector,
 #dotToDotImageSelector,
-#myWorkDotToDotImageSelector {
+#myWorkInProgressDotToDotImageSelector,
+#myWorkCompletedDotToDotImageSelector {
     overflow: scroll;
 }
 
