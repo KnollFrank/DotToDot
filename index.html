@@ -68,20 +68,14 @@
                                     }
                                 }
                             }
-                        });
+                        },
+                        "./images");
                 gameStarter.startGame();
             });
     </script>
 </head>
 
 <body>
-    <div class="topnav">
-        <button id="prevBtn" class="tablink">
-            <img src="img/back-svgrepo-com.svg" />
-        </button>
-        <div id="infotext" class="tablink"></div>
-    </div>
-
     <div class="bottomnav">
         <button id="freeButton" class="tablink">Free</button>
         <button id="premiumButton" class="tablink">Premium</button>
@@ -90,6 +84,12 @@
 
     <div class="main">
         <div id="freePage" class="pageContent">
+            <div class="topnav">
+                <button id="prevBtn" class="tablink">
+                    <img src="img/back-svgrepo-com.svg" />
+                </button>
+                <div id="infotext" class="tablink"></div>
+            </div>
             <div id="steps">
                 <div id="dotToDotImageCollectionSelectorStep" class="step">
                     <p>

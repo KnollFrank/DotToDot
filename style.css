@@ -120,10 +120,13 @@ a img {
 }
 
 .main {
-    margin-top: 40px;
     margin-bottom: 40px;
 }
-  
+
+#steps {
+    margin-top: 40px;
+}
+
 .step {
     display: none;
     animation: fadeEffect 0.3s;
