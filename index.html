@@ -76,12 +76,6 @@
 </head>
 
 <body>
-    <div class="bottomnav">
-        <button id="freeButton" class="tablink">Free</button>
-        <button id="premiumButton" class="tablink">Premium</button>
-        <button id="myWorkButton" class="tablink">My Work</button>
-    </div>
-
     <div class="main">
         <div id="freePage" class="pageContent">
             <div class="topnav">
@@ -147,11 +141,17 @@
         </div>
     </div>
 
+    <div class="bottomnav">
+        <button id="freeButton" class="tablink">Free</button>
+        <button id="premiumButton" class="tablink">Premium</button>
+        <button id="myWorkButton" class="tablink">My Work</button>
+    </div>
+
     <template id="template-DotToDotImageCardView">
-        <div style="display: inline-block;">
-            <h4></h4>
+        <div class="card" style="display: inline-block;">
+            <h4 class="heading"></h4>
             <canvas class="canvas"></canvas>
-            <div>
+            <div class="container">
                 <span></span>
                 <progress max="" value=""></progress>
             </div>
