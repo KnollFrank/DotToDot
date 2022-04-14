@@ -76,75 +76,80 @@
 </head>
 
 <body>
-    <div class="main">
-        <div id="freePage" class="pageContent">
-            <div class="topnav">
-                <button id="prevBtn" class="tablink">
-                    <img src="img/back-svgrepo-com.svg" />
-                </button>
-                <div id="infotext" class="tablink"></div>
-            </div>
-            <div id="steps">
-                <div id="dotToDotImageCollectionSelectorStep" class="step">
-                    <p>
-                        <a
-                            href='https://play.google.com/store/apps/details?id=org.walkfromdottodot&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                            <img alt='Get it on Google Play'
-                                src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
-                    </p>
-                    <div id="dotToDotImageCollectionSelector">
+    <div class="rootContainer">
+        <div class="topnav">
+            <button id="prevBtn" class="tablink">
+                <img src="img/back-svgrepo-com.svg" />
+            </button>
+            <div id="infotext" class="tablink"></div>
+        </div>
+
+        <div class="body">
+            <div class="main">
+                <div id="freePage" class="pageContent">
+                    <div id="steps">
+                        <div id="dotToDotImageCollectionSelectorStep" class="step">
+                            <p>
+                                <a
+                                    href='https://play.google.com/store/apps/details?id=org.walkfromdottodot&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                                    <img alt='Get it on Google Play'
+                                        src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
+                            </p>
+                            <div id="dotToDotImageCollectionSelector">
+                            </div>
+                        </div>
+                        <div id="dotToDotImageSelectorStep" class="step">
+                            <div id="dotToDotImageSelector">
+                            </div>
+                        </div>
+                        <div id="playDotToDotImageStep" class="step">
+                            <div id="container">
+                                <div id="progress"></div>
+                                <canvas id="dotToDtoImageCanvas" class="canvas"></canvas>
+                                <div id="controls">
+                                    <button type="button" id="playAgain">
+                                        <img src="img/replay-svgrepo-com.svg" />
+                                    </button>
+                                    <button type="button" id="centerPlayer">
+                                        <img src="img/gps-svgrepo-com.svg" />
+                                    </button>
+                                    <button type="button" id="zoomIn">
+                                        <img src="img/zoom-in-svgrepo-com.svg" />
+                                    </button>
+                                    <button type="button" id="zoomOut">
+                                        <img src="img/zoom-out-svgrepo-com.svg" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div id="dotToDotImageSelectorStep" class="step">
-                    <div id="dotToDotImageSelector">
-                    </div>
+
+                <div id="premiumPage" class="pageContent">
                 </div>
-                <div id="playDotToDotImageStep" class="step">
-                    <div id="container">
-                        <div id="progress"></div>
-                        <canvas id="dotToDtoImageCanvas" class="canvas"></canvas>
-                        <div id="controls">
-                            <button type="button" id="playAgain">
-                                <img src="img/replay-svgrepo-com.svg" />
-                            </button>
-                            <button type="button" id="centerPlayer">
-                                <img src="img/gps-svgrepo-com.svg" />
-                            </button>
-                            <button type="button" id="zoomIn">
-                                <img src="img/zoom-in-svgrepo-com.svg" />
-                            </button>
-                            <button type="button" id="zoomOut">
-                                <img src="img/zoom-out-svgrepo-com.svg" />
-                            </button>
+
+                <div id="myWorkPage" class="pageContent">
+                    <div>
+                        <button id="inProgressButton" class="tablink">In Progress</button>
+                        <button id="completedButton" class="tablink">Completed</button>
+                    </div>
+                    <div id="inProgressPage" class="pageContent">
+                        <div id="myWorkInProgressDotToDotImageSelector">
+                        </div>
+                    </div>
+                    <div id="completedPage" class="pageContent">
+                        <div id="myWorkCompletedDotToDotImageSelector">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="premiumPage" class="pageContent">
+        <div class="bottomnav">
+            <button id="freeButton" class="tablink">Free</button>
+            <button id="premiumButton" class="tablink">Premium</button>
+            <button id="myWorkButton" class="tablink">My Work</button>
         </div>
-
-        <div id="myWorkPage" class="pageContent">
-            <div>
-                <button id="inProgressButton" class="tablink">In Progress</button>
-                <button id="completedButton" class="tablink">Completed</button>
-            </div>
-            <div id="inProgressPage" class="pageContent">
-                <div id="myWorkInProgressDotToDotImageSelector">
-                </div>
-            </div>
-            <div id="completedPage" class="pageContent">
-                <div id="myWorkCompletedDotToDotImageSelector">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="bottomnav">
-        <button id="freeButton" class="tablink">Free</button>
-        <button id="premiumButton" class="tablink">Premium</button>
-        <button id="myWorkButton" class="tablink">My Work</button>
     </div>
 
     <template id="template-DotToDotImageCardView">
