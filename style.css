@@ -17,10 +17,21 @@ html {
     grid-template-rows: auto 1fr 40px;
 }
 
+#myWorkPage {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
 .body {
     display: grid;
     grid-template-columns: 1fr;
     overflow: hidden;
+}
+
+.main {
+    overflow-y: scroll;
 }
 
 .bottomnav {
@@ -124,10 +135,6 @@ a img {
 #myWorkInProgressDotToDotImageSelector,
 #myWorkCompletedDotToDotImageSelector {
     overflow: scroll;
-}
-
-.main {
-    overflow-y: scroll;
 }
 
 #steps {
